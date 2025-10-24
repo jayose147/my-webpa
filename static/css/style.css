@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #dbbb2b, #292828);
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: rgba(14, 25, 44, 0.493);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(14, 12, 12, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+footer {
+  background: linear-gradient(135deg, #5e5b5b0c, #a0c548);
+  color: rgba(255, 255, 255, 0.164);
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 40px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-btn {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 8px 18px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.social-btn:hover {
+  background: white;
+  color: #3b3b98;
+  transform: scale(1.05);
+}
+
+.social-btn.github:hover { color: #000; }
+.social-btn.linkedin:hover { color: #0077b5; }
+.social-btn.twitter:hover { color: #1da1f2; }
+.social-btn.email:hover { color: #e74c3c; }

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Okojie | Portfolio</title>
+
+  <style>
+    /* --- Base Styling --- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #dbbb2b, #292828);
+      color: #fff;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      margin-top: 15px;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.1em;
+      opacity: 0.9;
+    }
+
+    /* --- Projects Section --- */
+    #projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .project-card {
+      background: rgba(14, 25, 44, 0.493);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(14, 12, 12, 0.2);
+      width: 220px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .project-card h3 {
+      margin-top: 10px;
+      color: #fff;
+      font-size: 1.1em;
+    }
+
+    /* --- Footer Section --- */
+    footer {
+      background: linear-gradient(135deg, #1a1a1a, #292828);
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 40px;
+      border-top: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .social-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social-btn {
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      border-radius: 25px;
+      padding: 8px 18px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .social-btn:hover {
+      background: white;
+      color: #3b3b98;
+      transform: scale(1.05);
+    }
+
+    .social-btn.github:hover { color: #000; }
+    .social-btn.linkedin:hover { color: #0077b5; }
+    .social-btn.twitter:hover { color: #1da1f2; }
+    .social-btn.email:hover { color: #e74c3c; }
+
+    /* --- Animation Keyframes --- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* --- Responsive Design --- */
+    @media (max-width: 768px) {
+      #projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="static/projects/profile.GIF" alt="Profile Image" class="profile-img" />
+    <h1>Joseph Okojie</h1>
+    <p>Innovator | Junior Developer | Building a smarter future, one line of code at a time.</p>
+  </header>
+
+  <section id="projects">
+    <div class="project-card">
+      <img src="static/projects/project1.jpg" alt="Project 1" />
+      <h3>Weather App</h3>
+    </div>
+
+    <div class="project-card">
+      <img src="static/projects/project2.jpg" alt="Project 2" />
+      <h3>AI Code Extractor</h3>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 Joseph Okojie — Connect with me:</p>
+      <div class="social-buttons">
+        <a href="https://github.com/jayose147" target="_blank" class="social-btn github">GitHub</a>
+        <a href="https://twitter.com/ose_jay1" target="_blank" class="social-btn twitter">Twitter</a>
+        <a href="mailto:oseokojie.okojie@gmail.com" class="social-btn email">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
